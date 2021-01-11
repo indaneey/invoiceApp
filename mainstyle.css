@@ -1,0 +1,89 @@
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    margin-left: 5px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle i{
+    font-size: 13px;
+    color: rgb(139, 83, 83);
+}
+  
+.printPage{
+    background-color: rgb(46, 172, 46);
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    text-align: center;
+    left: 45%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.addItem{
+    background-color: rgba(255, 255, 255, 0.383);
+    width: 500%;
+    position: relative;
+    padding: 5px;
+    outline: none;
+    border: none;
+    text-align: center;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.205);
+    color: rgb(110, 58, 23);  
+    border-radius: 0px 0px 20px 20px; 
+}
+
+.indaneey{
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    border-top: 1px solid #AAAAAA;
+    bottom: -6px;
+    position: absolute;
+    height: 0px;
+    font-size: .8em;
+}
+
+#logoPen{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    pointer-events: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 50%;
+    padding: 10px;
+    top: 25%;
+    left: 25%;
+    
+}
+@media print{
+
+    .circle{
+      display: none;
+    }
+    .printPage{
+        display: none;
+    }
+    .addItem{
+        display: none;
+    }
+    #logoPen{
+        display: none;
+    }
+  }
