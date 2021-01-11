@@ -18,7 +18,7 @@ function addItemList(){
     }
     tbody.innerHTML += `<tr>
     <td class="no">0${itemNo}</td>
-    <td class="desc" ><h3 style="display: inline;" name="Biller Address" id="item${itemNo}decs" contenteditable="true" name="Item Name" id="item-name" >Website Design</h3></td>
+    <td class="desc" ><h3 style="display: inline;" name="Biller Address" id="item${itemNo}decs" contenteditable="true" name="Item Name" id="item-name" >Item ${itemNo}</h3></td>
     <td class="unit"><label>₦</label><h4 oninput="let one = document.querySelector('#item${itemNo}total');let two = document.querySelector('#item${itemNo}qty'); let total = (Math.round(parseFloat(this.textContent) * 100) / 100).toFixed(2) * parseInt(two.textContent); let totaltwo = (Math.round(parseFloat(total) * 100) / 100).toFixed(2); one.textContent = parseFloat(totaltwo).toLocaleString() ; ; subtotal()" style="display: inline-block;" name="Biller Address" id="item${itemNo}price" contenteditable="true">0.00</h4></td>
     <td class="qty"><h4 oninput="let one = document.querySelector('#item${itemNo}total');let two = document.querySelector('#item${itemNo}price'); let total = (Math.round(parseFloat(two.textContent) * 100) / 100).toFixed(2) * parseInt(this.textContent); let totaltwo = (Math.round(parseFloat(total) * 100) / 100).toFixed(2); one.textContent = parseFloat(totaltwo).toLocaleString() ; subtotal()" style="display: inline-block;" name="Biller Address" id="item${itemNo}qty" contenteditable="true">1</h4></td>
     <td class="total"><label>₦</label><h4 style="display: inline-block;" name="Biller Address" id="item${itemNo}total">0.00</h4></td>
