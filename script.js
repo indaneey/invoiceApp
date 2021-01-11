@@ -106,12 +106,14 @@ function printPage(){
     logoPen.style.display = 'none'
     this.style.display = 'none'
     window.print()
-    document.body.querySelectorAll('.circle').forEach((e)=>{
-        e.style.display = 'flex'
-    })
-    logoPen.style.display = 'inline'
-    addItem.style.display = 'inline'
-    this.style.display = 'flex'
+    setTimeout(() => {
+        document.body.querySelectorAll('.circle').forEach((e)=>{
+            e.style.display = 'flex'
+        })
+        logoPen.style.display = 'inline'
+        addItem.style.display = 'inline'
+        this.style.display = 'flex'
+    }, 15000);
 
 }
 document.body.querySelectorAll('.circle').forEach((e)=>{

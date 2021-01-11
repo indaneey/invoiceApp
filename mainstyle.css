@@ -1,3 +1,20 @@
+@media print{
+
+    .circle{
+      display: none;
+    }
+    .printPage{
+        display: none;
+    }
+    .addItem{
+        display: none;
+    }
+    #logoPen{
+        display: none;
+    }
+  }
+
+
 .circle{
     width: 20px;
     height: 20px;
@@ -72,18 +89,3 @@
     left: 25%;
     
 }
-@media print{
-
-    .circle{
-      display: none;
-    }
-    .printPage{
-        display: none;
-    }
-    .addItem{
-        display: none;
-    }
-    #logoPen{
-        display: none;
-    }
-  }

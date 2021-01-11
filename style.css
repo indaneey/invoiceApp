@@ -118,7 +118,7 @@ table td {
   padding: 10px;
   background: #EEEEEE;
   text-align: center;
-  border-bottom: 1px solid #FFFFFF;
+  border: 1px solid gray;
 }
 
 table th {
@@ -179,7 +179,7 @@ table td.total {
 }
 
 table tbody tr:last-child td {
-  border: none;
+  border-bottom: 2px solid gray;
 }
 
 table tfoot td {
